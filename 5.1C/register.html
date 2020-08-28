@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <div class="container">
+            <h1>Requester Registration</h1>
+            <p>Create and iCrowdTask Account</p>
+            <label for="country"><b>Country of Residence</b></label>
+            <br>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+            <br>
+            <label for="fname"><b>First name</b></label>
+            <span class="lnameLabel"><label for="lastname"><b>Last name</b></label></span>
+
+            <br>
+            <input type="text" placeholder="Enter First name" name="fname" id="fname" required>
+
+            <input type="text" placeholder="Enter Last name" name="lname" id="lname" required>
+            <br>
+
+            <div id="fields">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <br>
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <br>
+                <input type="password" placeholder="Repeat Password" name="pswrepeat" id="pswrepeat" required>
+                <br>
+                <label for="address"><b>Enter Address</b></label>
+                <br>
+                <input type="text" placeholder="line 1" name="addressLine1" id="addressLine1" required>
+                <br>
+                <input type="text" placeholder="line 2" name="addressLine2" id="addressLine2" required>
+                <br>
+            </div>
+            <label for="city"><b>City</b></label>
+            <span class="stateLabel"><label for="state"><b>State, Province or Region</b></label></span>
+            <br>
+            <input type="text" placeholder="City" name="city" id="city" required>
+            <input type="text" placeholder="State" name="state" id="state" required>
+            <br>
+
+            <label for="state"><b>Zip / Postal code</b></label>
+            <br>
+            <div id="fields">
+                <input type="text" placeholder="Zip" name="zip" id="zip">
+                <br>
+
+                <label for="number"><b>Mobile Number</b></label>
+                <br>
+                <input type="text" placeholder="Mobile Number" name="number" id="number">
+                <br>
+            </div>
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+    </form>
+    <script src="server.js"></script>
+</body>
+
+</html>
